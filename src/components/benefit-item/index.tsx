@@ -1,24 +1,14 @@
 import React from 'react';
 
-interface BenefitItemProp {
-  icon: string;
-  heading: string;
-  text: string;
-  alt: string;
-}
-export default function BenefitItem({
-  alt,
-  heading,
-  icon,
-  text,
-}: BenefitItemProp) {
+export default function BenefitItem({ heading, Icon, text }: BenefitItemProp) {
   return (
     <div className='text-center '>
       <div className='flex justify-center'>
-        <img src={icon} alt={alt} className='w-14' />
+        {/* <img src={icon} alt={alt} className='w-14' /> */}
+        <Icon />
       </div>
       <h3 className='font-bold py-4'>{heading}</h3>
-      <p>{text}</p>
+      <p className='leading-[1.5] font-light'>{text}</p>
     </div>
   );
 }

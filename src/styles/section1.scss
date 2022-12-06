@@ -1,0 +1,131 @@
+@import './mixin';
+@import './color';
+
+.section-one {
+  padding-top: 5rem;
+  .details {
+    @include flex-center($align: flex-end, $justify: unset);
+
+    .image-dets,
+    .text-dets {
+      position: relative;
+      width: 50%;
+    }
+    .text-dets {
+      h1 {
+        font-weight: 800;
+        font-size: 4.5rem /* 72px */;
+        line-height: 1;
+      }
+      .glass-bar {
+        @include flex-center($justify: space-between);
+        position: absolute;
+        height: 6rem;
+        width: 125%;
+        z-index: 10;
+        padding: 0 1.5rem;
+        border-radius: 0.375rem;
+        margin: 1rem 0;
+        border: 1px solid rgba(224, 224, 224, 0.25);
+        background-color: rgba(243, 239, 239, 0.547);
+        box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(15px);
+        span {
+          color: $grey_light;
+          font-weight: 300;
+          &:first-child {
+            @include flex-center($justify: unset);
+            span {
+              padding-left: 0.75rem /* 12px */;
+            }
+          }
+        }
+      }
+      .profile-dets {
+        @include flex-center($justify: unset);
+        flex-wrap: wrap;
+        margin-top: 9rem;
+
+        .pfp-box {
+          @include flex-center($justify: unset);
+          img,
+          span {
+            position: relative;
+          }
+          img:nth-child(2) {
+            left: -10px;
+          }
+          img:nth-child(3) {
+            left: -20px;
+          }
+          img:nth-child(4) {
+            left: -30px;
+          }
+          img:nth-child(5) {
+            left: -40px;
+          }
+          img:nth-child(6) {
+            left: -50px;
+          }
+
+          span {
+            @include flex-center;
+            width: 35px;
+            height: 35px;
+            border: 2px solid white;
+            left: -60px;
+            background-color: #13ded2;
+            border-radius: 50%;
+            color: white;
+            font-size: 0.75rem;
+            position: relative;
+          }
+        }
+        .text {
+          position: relative;
+          left: -40px;
+        }
+      }
+    }
+    .image-dets {
+      display: flex;
+    }
+  }
+
+  .logos {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    padding: 6rem 0;
+  }
+}
+
+.co-working {
+  opacity: 0.2;
+  font-weight: 800;
+  font-size: 3rem;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  height: 48px;
+  position: absolute;
+  bottom: 16%;
+  right: -34%;
+}
+
+.imgs img {
+  position: absolute;
+  &:first-child {
+    left: 34%;
+    top: -5%;
+  }
+  &:nth-child(2) {
+    left: 56%;
+    top: 36%;
+  }
+  &:nth-child(3) {
+    left: 80%;
+    top: 20%;
+  }
+}
+
