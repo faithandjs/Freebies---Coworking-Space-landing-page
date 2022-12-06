@@ -4,11 +4,7 @@ export default function ButtonOrange({
   text,
   type,
   classes = '',
-}: {
-  text: string;
-  type: 'fill' | 'outline';
-  classes?: string;
-}) {
+}: orangeButton) {
   const typedClass =
     type === 'fill'
       ? 'bg-orange text-white border-transparent '

@@ -1,45 +1,35 @@
+@import './mixin';
+* {
+  // @apply shrink-0;
+}
 body {
   background: linear-gradient(0deg, #fff, #fff);
-  // background: linear-gradient(120deg, #ffdb80 0%, #47cbf356 100%) top center/
-  //     100vw 500px no-repeat,
-  //   linear-gradient(0deg, #fff, #fff);
-  background-blend-mode: color-burn;
 
   @apply bg-white relative;
-  // &::after {
-  //   z-index: -1;
-  //   content: '';
-  //   width: 100%;
-  //   height: 600px;
-  //   background: linear-gradient(to right, #ffdb804b 0%, #47cbf32e 100%);
-  //   top: 0px;
-  //   left: 0;
-  //   position: absolute;
-  //   opacity: 0.5;
-  // }
   &::after,
   &::before {
-    z-index: -1;
-    content: '';
-    width: 50vw;
-    height: 1000px;
-    top: -200px;
-    // border-radius: 50%;
-    position: absolute;
-    opacity: 0.4;
+    opacity: 0.5;
     filter: blur(100px);
   }
   &::before {
-    // background-color: #63d3f524;
-    background: linear-gradient(0deg, #ffdb803c 0%, #ffdb8069 100%);
-    left: 0px;
+    @include after(
+      $w: 50vw,
+      $h: 1000px,
+      $t: -200px,
+      $l: 0px,
+      $bg: linear-gradient(0deg, #ffdb803c 0%, #ffdb8069 100%)
+    );
     border-bottom-right-radius: 10%;
     border-top-right-radius: 10%;
   }
   &::after {
-    // background-color: #ffdb8030;
-    background: linear-gradient(0deg, #47cbf339 0%, #47cbf363 100%);
-    right: 0px;
+    @include after(
+      $w: 50vw,
+      $h: 1000px,
+      $t: -200px,
+      $r: 0px,
+      $bg: linear-gradient(0deg, #47cbf339 0%, #47cbf363 100%)
+    );
     border-bottom-left-radius: 10%;
     border-top-left-radius: 10%;
   }
@@ -59,7 +49,6 @@ header {
 }
 
 main {
-  height: 200vh;
   @apply px-52 bg-transparent;
 }
 
@@ -89,9 +78,9 @@ footer {
 
   .follow {
     ul {
-      @apply flex;
+      // @apply flex;
       li {
-        @apply w-8 h-8 rounded-full bg-green-500 mr-3;
+        // @apply w-8 h-8 rounded-full bg-green-500 mr-3;
       }
     }
   }

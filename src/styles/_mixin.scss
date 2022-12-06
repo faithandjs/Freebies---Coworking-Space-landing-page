@@ -1,0 +1,29 @@
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin after(
+  $z: -1,
+  $w: 100%,
+  $h: 100%,
+  $t: unset,
+  $b: unset,
+  $l: unset,
+  $r: unset,
+  $p: absolute,
+  $bg: unset
+) {
+  z-index: $z;
+  content: '';
+  width: $w;
+  height: $h;
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
+  position: $p;
+  background: $bg;
+}
+
