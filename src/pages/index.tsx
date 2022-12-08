@@ -1,6 +1,7 @@
 import * as React from 'react';
+
 import type { HeadFC, PageProps } from 'gatsby';
-import '../styles/global.scss';
+
 import {
   FooterElement,
   HeaderElement,
@@ -13,11 +14,13 @@ import {
   Section7,
 } from '../components';
 
+import '../styles/global.scss';
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <HeaderElement />
-      <main>
+      <main className='bg-transparent child:px-20 2xl:child:px-44'>
         <Section1 />
         <Section2 />
         <Section3 />

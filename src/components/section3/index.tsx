@@ -1,9 +1,15 @@
 import React from 'react';
+
+import DetailsView from '../details-view';
+import VisionsList from './component/visions-list';
+
 import briefcase from '../../assets/svgs/briefcase.svg';
 import building from '../../assets/svgs/building.svg';
 import bullseye from '../../assets/svgs/bullseye.svg';
-import DetailsView from '../details-view';
-import VisionsList from './component/visions-list';
+import one from '../../assets/images/sec3-1.png';
+import two from '../../assets/images/sec3-2.png';
+import three from '../../assets/images/sec3-3.png';
+import four from '../../assets/images/sec3-4.png';
 
 export default function Section3() {
   return (
@@ -40,7 +46,15 @@ export default function Section3() {
           </div>
         )}
       />
-      <div>lala</div>
+      <div className='relative flex justify-end max-h-[662px]'>
+        <div className='h-[60%] w-2/3 bg-[#FFF3C8] rounded-tl-[40%] mt-10   '></div>
+        <div className=' child:absolute'>
+          <img src={one} alt='' className='left-[45%] -top-5' />
+          <img src={two} alt='' className='left-56 -bottom-16' />
+          <img src={three} alt='' className='-right-36 bottom-40' />
+          <img src={four} alt='' className='-right-6 -top-16' />
+        </div>
+      </div>
     </section>
   );
 }

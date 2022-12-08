@@ -1,11 +1,11 @@
 import React from 'react';
-import womanTping from '../../assets/images/woman-typing.jpg';
-import calendar from '../../assets/svgs/calendar.svg';
-import bell from '../../assets/svgs/addbell.svg';
-import play from '../../assets/svgs/play.svg';
 
-import '../../styles/section2.scss';
 import DetailsView from '../details-view';
+
+import play from '../../assets/svgs/play.svg';
+import bell from '../../assets/svgs/addbell.svg';
+import calendar from '../../assets/svgs/calendar.svg';
+import womanTping from '../../assets/images/woman-typing.jpg';
 
 export default function Section2() {
   return (
@@ -21,6 +21,12 @@ export default function Section2() {
                 width: 'calc(100% + 20px)',
               }}>
               <div className='bg-white w-full h-full rounded-t-full '></div>
+            </div>
+            <div className='absolute bottom-0 -right-28'>
+              <div className='w-12 h-12 rounded-full bg-white flex items-center justify-center absolute shadow'>
+                <img src={bell} alt='bell with plus sign' />
+              </div>
+              <img src={calendar} alt='calendar' />
             </div>
           </div>
           <ul className='flex child:w-3 child:h-3 child:mx-1 w-max m-auto py-4 '>

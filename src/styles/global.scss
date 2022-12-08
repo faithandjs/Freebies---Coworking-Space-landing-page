@@ -1,10 +1,9 @@
 @import './mixin';
-* {
-  // @apply shrink-0;
-}
+
 body {
   background: linear-gradient(0deg, #fff, #fff);
-
+  max-width: 1792px;
+  min-width: 1265px;
   @apply bg-white relative;
   &::after,
   &::before {
@@ -35,55 +34,15 @@ body {
   }
 }
 
-header {
-  @apply flex justify-between items-center py-10 px-52;
-  ul {
-    @apply flex w-max;
-    li {
-      @apply px-3 text-grey;
-    }
-  }
-  div {
-    @apply text-2xl;
-  }
-}
-
-main {
-  @apply px-52 bg-transparent;
-}
-
 footer {
   background-image: linear-gradient(0deg, #fd5c2f2a 0%, #fff 100%);
-  @apply w-full flex justify-between py-28 px-52;
-  h2 {
-    @apply text-2xl pb-3;
-  }
-  h3 {
-    @apply text-xl pb-3 text-orange;
-  }
-  ul,
-  p {
-    @apply font-light;
-  }
+}
 
-  .text {
-    @apply max-w-xs;
-  }
-
-  ul {
-    li {
-      @apply py-2;
-    }
-  }
-
-  .follow {
-    ul {
-      // @apply flex;
-      li {
-        // @apply w-8 h-8 rounded-full bg-green-500 mr-3;
-      }
-    }
-  }
+.glass-bar {
+  border: 1px solid rgba(224, 224, 224, 0.25);
+  background-color: rgba(243, 239, 239, 0.547);
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
 }
 
 @tailwind base;
