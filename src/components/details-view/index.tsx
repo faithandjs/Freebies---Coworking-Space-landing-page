@@ -8,9 +8,10 @@ export default function DetailsView({
   orangeBtn,
   ExtraBtn = false,
   ExtraText = false,
+  className = '',
 }: detailsView) {
   return (
-    <div className='w-full'>
+    <div className={'w-full ' + className}>
       <h4 className='text-orange uppercase font-bold tracking-widest'>
         {subject}
       </h4>

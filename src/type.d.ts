@@ -10,6 +10,7 @@ interface detailsView {
   orangeBtn: orangeButton;
   ExtraBtn?: (() => JSX.Element) | false;
   ExtraText?: (() => JSX.Element) | false;
+  className?: string;
 }
 interface visionsList {
   heading: string;
@@ -23,3 +24,4 @@ interface BenefitItemProp {
   heading: string;
   text: string;
 }
+

@@ -6,17 +6,17 @@ import twt from '../../assets/logos/sm/twt.svg';
 
 export default function FooterElement() {
   return (
-    <footer>
-      <div className='text'>
-        <h2>1-Space</h2>
-        <p>
+    <footer className='w-full flex justify-between py-28 px-20  2xl:px-52'>
+      <div className='max-w-xs'>
+        <h2 className='text-2xl pb-3'>1-Space</h2>
+        <p className='font-light'>
           Men cannot not live by exchanging articles, but producing them. They
           live by work not trade.
         </p>
       </div>
       <div>
-        <h3>Company</h3>
-        <ul>
+        <h3 className='text-xl pb-3 text-orange'>Company</h3>
+        <ul className='font-light child:py-2'>
           <li>Global Localities</li>
           <li>Missions</li>
           <li>Careers</li>
@@ -25,8 +25,8 @@ export default function FooterElement() {
         </ul>
       </div>
       <div>
-        <h3>Partnership</h3>
-        <ul>
+        <h3 className='text-xl pb-3 text-orange'>Partnership</h3>
+        <ul className='font-light child:py-2'>
           <li>Tasks</li>
           <li>Profile</li>
           <li>Events</li>
@@ -34,7 +34,7 @@ export default function FooterElement() {
         </ul>
       </div>
       <div className='follow'>
-        <h3>Follow us</h3>
+        <h3 className='text-xl pb-3 text-orange'>Follow us</h3>
         <div className='flex'>
           {[
             {

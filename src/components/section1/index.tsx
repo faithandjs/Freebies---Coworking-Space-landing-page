@@ -20,42 +20,62 @@ import atlasian from '../../assets/logos/atlassian.svg';
 import dropbox from '../../assets/logos/dropbox.svg';
 import shopify from '../../assets/logos/shopify.svg';
 
-import '../../styles/section1.scss';
-
 export default function Section1() {
   return (
-    <section className='section-one'>
-      <div className='details'>
-        <div className='text-dets'>
+    <section className='pt-20'>
+      <div className='flex items-end child:w-1/2 child:relative'>
+        <div className='relative'>
           <img src={squiggle} alt='orange squiggle ' />
-          <h1 className='pb-16'>
+          <h1 className='pb-16 font-extrabold text-6xl 2xl:text-7xl'>
             A new way to revolutionise your workspace to yourself
           </h1>
-          <div className='glass-bar'>
-            <span>
+          <div className='glass-bar flex items-center justify-between absolute h-24 w-[125%] z-10 px-6 my-4 text-grey-light font-light'>
+            <span className='flex items-center '>
               <img src={mapPin} alt='map marker ' />
-              <span> City</span>
+              <span className='pl-3'> City</span>
             </span>
             <span>Location</span>
             <ButtonOrange text='Schedule Visit' type='fill' />
           </div>
-          <div className='profile-dets'>
-            <div className='pfp-box'>
+          <div className='flex items-center flex-wrap mt-36 '>
+            <div className='pfp-box flex items-center child:relative'>
               <img src={one} alt='dummy profile picture' />
-              <img src={two} alt='dummy profile picture' />
-              <img src={three} alt='dummy profile picture' />
-              <img src={four} alt='dummy profile picture' />
-              <img src={five} alt='dummy profile picture' />
-              <img src={six} alt='dummy profile picture' />
-              <span className=' '>+10</span>
+              <img
+                src={two}
+                alt='dummy profile picture'
+                className='left-[-10px]'
+              />
+              <img
+                src={three}
+                alt='dummy profile picture'
+                className='left-[-20px]'
+              />
+              <img
+                src={four}
+                alt='dummy profile picture'
+                className='left-[-30px]'
+              />
+              <img
+                src={five}
+                alt='dummy profile picture'
+                className='left-[-40px]'
+              />
+              <img
+                src={six}
+                alt='dummy profile picture'
+                className='left-[-50px]'
+              />
+              <span className='left-[-60px] flex items-center justify-center w-[35px] h-[35px] border-2 border-white bg-[#13ded2] rounded-full text-white text-xs '>
+                +10
+              </span>
             </div>
-            <span className='text'>
+            <span className='relative -left-10'>
               16 people booked a visit in last 24 hours
             </span>
           </div>
         </div>
 
-        <div className='image-dets   child:shrink-0 '>
+        <div className='flex   child:shrink-0 '>
           <div className='flex'>
             <div className='relative'>
               <img src={main} alt='' className='rounded-t-full' />
@@ -68,17 +88,31 @@ export default function Section1() {
                 }}>
                 <div className='bg-white w-full h-full rounded-t-full '></div>
               </div>
-              <p className='co-working'>Co Working</p>
+              <p className=' opacity-20 font-extrabold text-5xl -rotate-90 whitespace-nowrap h-[48px] absolute bottom-[16%] right-[-34%] '>
+                Co Working
+              </p>
             </div>
           </div>
-          <div className='imgs '>
-            <img src={img1} alt='man sitting with a pc in a work area' />
-            <img src={img2} alt='man sitting with a pc in a work area' />
-            <img src={img3} alt='man and woman sitting with a pc and a cup' />
+          <div className='child:absolute '>
+            <img
+              src={img1}
+              alt='man sitting with a pc in a work area'
+              className='left-[34%] top-[-5%]'
+            />
+            <img
+              src={img2}
+              alt='man sitting with a pc in a work area'
+              className='left-[56%] top-[36%]'
+            />
+            <img
+              src={img3}
+              alt='man and woman sitting with a pc and a cup'
+              className='left-[80%] top-[20%]'
+            />
           </div>
         </div>
       </div>
-      <div className='logos'>
+      <div className='m-auto flex justify-between items-center max-w-[700px] py-24'>
         <img src={google} alt='google logo' />
         <img src={slack} alt='slack logo' />
         <img src={atlasian} alt='atlassian logo' />
