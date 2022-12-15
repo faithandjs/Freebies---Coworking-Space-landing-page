@@ -10,10 +10,10 @@ export default function Section7() {
   return (
     <section className='flex  pt-44 justify-between items-stretch '>
       <div style={{ width: 'calc(55% - 10px)' }} className='shrink-0'>
-        <h4 className='text-orange uppercase font-bold tracking-widest'>
+        <h4 className='text-orange uppercase tracking-widest font-heading2'>
           Gallery
         </h4>
-        <h2 className='text-6xl font-semibold py-5'>
+        <h2 className='text-6xl font-heading py-5'>
           Immersive beautiful co-working space gallery
         </h2>
         <div className='h-3/4 pt-4'>

@@ -10,7 +10,10 @@ export default function ButtonOrange({
       ? 'bg-orange text-white border-transparent '
       : 'bg-transparent text-orange border-orange ';
   return (
-    <button className={' rounded-md py-3 px-4 border ' + typedClass + classes}>
+    <button
+      className={
+        ' rounded-md py-3 px-6 border font-heading ' + typedClass + classes
+      }>
       {text}
     </button>
   );

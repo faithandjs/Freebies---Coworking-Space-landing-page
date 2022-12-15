@@ -15,7 +15,7 @@ export default function FooterElement() {
         </p>
       </div>
       <div>
-        <h3 className='text-xl pb-3 text-orange'>Company</h3>
+        <h3 className='text-xl pb-3 text-orange font-heading2'>Company</h3>
         <ul className='font-light child:py-2'>
           <li>Global Localities</li>
           <li>Missions</li>
@@ -25,7 +25,7 @@ export default function FooterElement() {
         </ul>
       </div>
       <div>
-        <h3 className='text-xl pb-3 text-orange'>Partnership</h3>
+        <h3 className='text-xl pb-3 text-orange font-heading2'>Partnership</h3>
         <ul className='font-light child:py-2'>
           <li>Tasks</li>
           <li>Profile</li>
@@ -34,7 +34,7 @@ export default function FooterElement() {
         </ul>
       </div>
       <div className='follow'>
-        <h3 className='text-xl pb-3 text-orange'>Follow us</h3>
+        <h3 className='text-xl pb-3 text-orange font-heading2'>Follow us</h3>
         <div className='flex'>
           {[
             {

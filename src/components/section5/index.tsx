@@ -11,11 +11,13 @@ import calenderStar from '../../assets/svgs/section5/calenderStar.svg';
 export default function Section5() {
   return (
     <section className='text-center py-32'>
-      <h4 className='text-orange uppercase font-bold tracking-widest'>
+      <h4 className='text-orange uppercase font-bold tracking-widest font-heading2'>
         Why Choose Us?
       </h4>
       <div className='max-w-[600px] m-auto py-6'>
-        <h2 className='text-6xl '>The benefits that will make you comfort</h2>
+        <h2 className='text-6xl font-heading'>
+          The benefits that will make you comfort
+        </h2>
       </div>
       <div className='flex justify-between pt-10'>
         {[
