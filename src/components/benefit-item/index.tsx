@@ -7,7 +7,7 @@ export default function BenefitItem({ heading, Icon, text }: BenefitItemProp) {
         {/* <img src={icon} alt={alt} className='w-14' /> */}
         <Icon />
       </div>
-      <h3 className='font-bold py-4'>{heading}</h3>
+      <h3 className='py-4 font-heading2 text-lg'>{heading}</h3>
       <p className='leading-[1.5] font-light'>{text}</p>
     </div>
   );

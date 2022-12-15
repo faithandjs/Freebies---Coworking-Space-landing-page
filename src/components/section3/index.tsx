@@ -20,7 +20,7 @@ export default function Section3() {
         text='Coworking is an arrangement in which workers of different companies share an office space, allowing cost savings and convenience through the use of common infrastructures services.'
         topic='Our vision in 1-space to make something'
         ExtraText={() => (
-          <div className='py-5'>
+          <div className='py-5  font-profile'>
             <div className='flex child:w-[48%] justify-between'>
               <VisionsList
                 Icon={() => <img src={building} alt='building icon' />}

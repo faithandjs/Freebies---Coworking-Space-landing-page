@@ -25,8 +25,8 @@ export default function Section1() {
     <section className='pt-20'>
       <div className='flex items-end child:w-1/2 child:relative'>
         <div className='relative'>
-          <img src={squiggle} alt='orange squiggle ' />
-          <h1 className='pb-16 font-extrabold text-6xl 2xl:text-7xl'>
+          <img src={squiggle} alt='orange squiggle ' className='py-2' />
+          <h1 className='pb-16 font-extrabold text-6xl 2xl:text-7xl font-mainText'>
             A new way to revolutionise your workspace to yourself
           </h1>
           <div className='glass-bar flex items-center justify-between absolute h-24 w-[125%] z-10 px-6 my-4 text-grey-light font-light'>
@@ -69,7 +69,7 @@ export default function Section1() {
                 +10
               </span>
             </div>
-            <span className='relative -left-10'>
+            <span className='relative -left-10 font-profile'>
               16 people booked a visit in last 24 hours
             </span>
           </div>
