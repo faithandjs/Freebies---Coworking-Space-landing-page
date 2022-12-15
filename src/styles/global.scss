@@ -1,9 +1,13 @@
 @import './mixin';
 
+html {
+  display: flex;
+  justify-content: center;
+}
 body {
   background: linear-gradient(0deg, #fff, #fff);
-  max-width: 1792px;
-  min-width: 1265px;
+  max-width: 1860px;
+  // min-width: 1265px;
   @apply bg-white relative;
   &::after,
   &::before {
