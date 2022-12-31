@@ -22,9 +22,9 @@ import shopify from '../../assets/logos/shopify.svg';
 
 export default function Section1() {
   return (
-    <section className='pt-20'>
-      <div className='flex items-end child:w-1/2 child:relative'>
-        <div className='relative'>
+    <section className='pt-20 2xl:overflow-auto overflow-hidden'>
+      <div className='flex items-end lg:child:w-1/2  child:relative'>
+        <div className='relative pr-3 w-2/3'>
           <img src={squiggle} alt='orange squiggle ' className='py-2' />
           <h1 className='pb-16 font-extrabold text-6xl 2xl:text-7xl font-mainText'>
             A new way to revolutionise your workspace to yourself
@@ -38,7 +38,7 @@ export default function Section1() {
             <ButtonOrange text='Schedule Visit' type='fill' />
           </div>
           <div className='flex items-center flex-wrap mt-36 '>
-            <div className='pfp-box flex items-center child:relative'>
+            <div className='pfp-box flex items-center child:relative relative'>
               <img src={one} alt='dummy profile picture' />
               <img
                 src={two}
@@ -65,22 +65,26 @@ export default function Section1() {
                 alt='dummy profile picture'
                 className='left-[-50px]'
               />
-              <span className='left-[-60px] flex items-center justify-center w-[35px] h-[35px] border-2 border-white bg-[#13ded2] rounded-full text-white text-xs '>
+              <span className='!absolute   right-[10px]  flex items-center justify-center w-[35px] h-[35px] border-2 border-white bg-[#13ded2] rounded-full text-white text-xs '>
                 +10
               </span>
             </div>
-            <span className='relative -left-10 font-profile'>
+            <span className=' font-profile'>
               16 people booked a visit in last 24 hours
             </span>
           </div>
         </div>
 
-        <div className='flex   child:shrink-0 '>
+        <div className='flex   child:shrink-0 w-1/3'>
           <div className='flex'>
             <div className='relative'>
-              <img src={main} alt='' className='rounded-t-full' />
+              <img
+                src={main}
+                alt=''
+                className='rounded-t-full  lg:w-[455px] w-3/5'
+              />
               <div
-                className='absolute  -top-4 -left-4 w-full h-full -z-10 rounded-t-full p-[2px] pb-0'
+                className='absolute  -top-4 -left-4  lg:w-full w-3/5 h-full -z-10 rounded-t-full p-[2px] pb-0'
                 style={{
                   backgroundImage:
                     'linear-gradient(45deg, #3B90FB 0%, #A7327A 100%)',
@@ -88,12 +92,12 @@ export default function Section1() {
                 }}>
                 <div className='bg-white w-full h-full rounded-t-full '></div>
               </div>
-              <p className=' opacity-20 font-extrabold text-5xl -rotate-90 whitespace-nowrap h-[48px] absolute bottom-[16%] right-[-34%] '>
+              <p className='font-mainText font-medium opacity-20 text-5xl -rotate-90 whitespace-nowrap h-[48px] absolute   lg:right-[-37%] right-[-40%] lg:bottom-[17%] bottom-[20%]  '>
                 Co Working
               </p>
             </div>
           </div>
-          <div className='child:absolute '>
+          <div className='child:absolute  lg:block hidden '>
             <img
               src={img1}
               alt='man sitting with a pc in a work area'
@@ -102,12 +106,12 @@ export default function Section1() {
             <img
               src={img2}
               alt='man sitting with a pc in a work area'
-              className='left-[56%] top-[36%]'
+              className='left-[56%] top-[36%] '
             />
             <img
               src={img3}
               alt='man and woman sitting with a pc and a cup'
-              className='left-[80%] top-[20%]'
+              className='left-[80%] top-[20%]  xl:block hidden xl:max-w-'
             />
           </div>
         </div>

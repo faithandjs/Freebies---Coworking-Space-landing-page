@@ -50,8 +50,12 @@ export default function Section3() {
         <div className='h-[60%] w-2/3 bg-[#FFF3C8] rounded-tl-[40%] mt-10   '></div>
         <div className=' child:absolute'>
           <img src={one} alt='' className='left-[45%] -top-5' />
-          <img src={two} alt='' className='left-56 -bottom-16' />
-          <img src={three} alt='' className='-right-36 bottom-40' />
+          <img src={two} alt='' className=' lg:left-56 -bottom-16 left-36' />
+          <img
+            src={three}
+            alt=''
+            className='-right-36 bottom-40 2xl:block hidden'
+          />
           <img src={four} alt='' className='-right-6 -top-16' />
         </div>
       </div>

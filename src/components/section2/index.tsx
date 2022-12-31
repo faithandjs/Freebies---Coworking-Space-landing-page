@@ -10,10 +10,14 @@ import womanTping from '../../assets/images/woman-typing.jpg';
 export default function Section2() {
   return (
     <section className='flex items-center justify-between pt-20 child:shrink-0 child:w-[50%] '>
-      <div>
+      <div className=' '>
         <div className='w-max'>
           <div className='relative'>
-            <img src={womanTping} alt='' className='rounded-t-full' />
+            <img
+              src={womanTping}
+              alt=''
+              className='rounded-t-full unset w-[380px]'
+            />
             <div
               className='absolute -top-3 left-[50%] h-[55%] -z-10 rounded-t-full p-[2px] pb-0 translate-x-[-50%]'
               style={{
