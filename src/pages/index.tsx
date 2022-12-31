@@ -20,7 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <HeaderElement />
-      <main className='bg-transparent child:px-20 2xl:child:px-44'>
+      <main className='bg-transparent child:px-14 xl:child:px-20 2xl:child:px-44  lg:overflow-auto overflow-hidde '>
         <Section1 />
         <Section2 />
         <Section3 />
