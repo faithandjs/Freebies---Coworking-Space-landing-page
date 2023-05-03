@@ -57,6 +57,15 @@ footer {
   backdrop-filter: blur(15px);
 }
 
+.detailView4 {
+}
+
+@media screen and( min-width: 1024px) {
+  .detailView4 {
+    width: calc(55% - 11rem) !important;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

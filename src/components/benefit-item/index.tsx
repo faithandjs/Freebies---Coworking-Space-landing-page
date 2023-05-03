@@ -1,8 +1,13 @@
 import React from 'react';
 
-export default function BenefitItem({ heading, Icon, text }: BenefitItemProp) {
+export default function BenefitItem({
+  heading,
+  Icon,
+  text,
+  className,
+}: BenefitItemProp) {
   return (
-    <div className='text-center px-4'>
+    <div className={'text-center px-4 ' + className}>
       <div className='flex justify-center'>
         {/* <img src={icon} alt={alt} className='w-14' /> */}
         <Icon />

@@ -23,5 +23,6 @@ interface BenefitItemProp {
   Icon: () => JSX.Element;
   heading: string;
   text: string;
+  className?: string;
 }
 

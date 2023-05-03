@@ -19,7 +19,7 @@ export default function Section5() {
           The benefits that will make you comfort
         </h2>
       </div>
-      <div className='flex justify-between pt-10'>
+      <div className='pt-10 lg:flex lg:justify-between gap-y-10 grid justify-center grid-cols-6 child:col-span-2 '>
         {[
           {
             heading: 'Community Events',
@@ -40,11 +40,13 @@ export default function Section5() {
             heading: 'Global Availability',
             Icon: () => <img src={globe} alt='globe image' />,
             text: 'Allowing cost savings and convenience through the use of common infrastructures.',
+            className: '!col-start-2',
           },
           {
             heading: 'Comfort Lounges',
             Icon: () => <img src={sofa} alt='sofa image' />,
             text: 'Allowing cost savings and convenience through the use of common infrastructures.',
+            className: '!col-start-4',
           },
         ].map((item, key) => (
           <BenefitItem {...{ ...item, key }} />

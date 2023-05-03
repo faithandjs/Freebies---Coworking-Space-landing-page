@@ -7,8 +7,8 @@ import two from '../../assets/images/sec4-2.jpg';
 
 export default function Section4() {
   return (
-    <section className='flex pt-44 !pr-0 items-center '>
-      <div style={{ width: 'calc(55% -  11rem' }}>
+    <section className='flex pt-44 lg:!pr-0  items-center justify-between '>
+      <div className='w-full px-10 lg:p-0 detailView4'>
         <DetailsView
           orangeBtn={{ text: 'View Availability', type: 'fill' }}
           subject='Solutions'
@@ -18,7 +18,7 @@ export default function Section4() {
         />
       </div>
       <div
-        className='flex w-full justify-end'
+        className='lg:flex xl:w-full justify-end !w-[50%] hidden '
         style={{ width: 'calc(45% +  11rem' }}>
         <img src={one} alt='' className='mr-10' />
         <img src={two} alt='' />

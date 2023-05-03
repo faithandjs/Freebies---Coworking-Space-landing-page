@@ -26,11 +26,15 @@ export default function Section2() {
               }}>
               <div className='bg-white w-full h-full rounded-t-full '></div>
             </div>
-            <div className='absolute bottom-0 -right-28'>
-              <div className='w-12 h-12 rounded-full bg-white flex items-center justify-center absolute shadow'>
-                <img src={bell} alt='bell with plus sign' />
+            <div className='absolute bottom-0 lg:-right-28 -right-20'>
+              <div className='lg:w-12 lg:h-12 w-10 h-10 rounded-full bg-white flex items-center justify-center absolute shadow'>
+                <img
+                  src={bell}
+                  alt='bell with plus sign'
+                  className=' lg:w-unset w-6'
+                />
               </div>
-              <img src={calendar} alt='calendar' />
+              <img src={calendar} alt='calendar' className=' lg:w-unset w-36' />
             </div>
           </div>
           <ul className='flex child:w-3 child:h-3 child:mx-1 w-max m-auto py-4 '>
