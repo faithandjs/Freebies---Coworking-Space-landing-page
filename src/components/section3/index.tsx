@@ -43,22 +43,22 @@ export default function Section3() {
         )}
       />
       <div className='relative flex lg:justify-end lg:items-start justify-center items-center max-h-[662px]'>
-        <div className='h-[60%] lg:max-h-max max-h-80 w-2/3 bg-[#FFF3C8] rounded-tl-[40%] mt-10   '></div>
+        <div className='h-[60%] max-h-max  w-2/3 bg-[#FFF3C8] rounded-tl-[40%] mt-10   '></div>
         <div className=' child:absolute'>
           <img
             src={one}
             alt=''
-            className='left-[45%] xl:-top-5  lg:p-0 w-[56%] top-[-10%]'
+            className='left-[45%] -top-5  lg:p-0 w-[56%] '
           />
           <img
             src={two}
             alt=''
-            className=' lg:left-56 xl:-bottom-16 left-36 xl:w-auto w-[60%] bottom-[20%]'
+            className=' lg:left-56 -bottom-16 left-36 w-auto '
           />
           <img
             src={three}
             alt=''
-            className='-right-36 bottom-40 2xl:block hidden'
+            className='-right-36 bottom-40 2block hidden'
           />
           <img src={four} alt='' className='-right-6 lg:-top-16 top-[23%]' />
         </div>

@@ -60,7 +60,12 @@ footer {
 .detailView4 {
 }
 
-@media screen and( min-width: 1024px) {
+section,
+footer,
+nav {
+  min-width: 1024px;
+}
+@media screen and (min-width: 1024px) {
   .detailView4 {
     width: calc(55% - 11rem) !important;
   }
